@@ -54,11 +54,13 @@ def plotCat2Num(df, x_name, y_name):
 
 # Countplot for categorical features with percentage label on the bars
 def count_plot(df, col_name):
-    target_percentage = (df[col_name].value_counts() / len(df)) * 100
+    target_percentage = (df[col_name].value_counts()/df[col_name].count()) * 100
 
     # Create the count plot with percentages as labels
     plt.figure(figsize=[8, 4])
-    ax = sns.countplot(data=df, x=col_name)
+    
+    count_order = df[col_name].value_counts().index
+    ax = sns.countplot(data=df, x=col_name, order=count_order)
     plt.title(col_name + ' Distribution')
     plt.ylabel('Count')
 
