@@ -51,3 +51,6 @@ Used the below metrics to compare the model's performance on test set:
 
 ### Model Saving and creating app using Flask
 * Saved the model as a .pkl file and created an app using Flask that takes user input and predicts the customer churn. 
+
+### Model Selection
+Out of all the models we tested, the Random Forest Classifier model showed the best performance. It achieved an F1 score of 0.65, a test accuracy of 79%, and an AUC of 0.862.
