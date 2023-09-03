@@ -1,4 +1,13 @@
 # Telco-customer-churn-prediction
+
+## File Structure:
+- TelecomCustomerChurn.ipynb: Contains the entire project code
+- Utilities: Contains my own custom modules for evaluation metrics(EvaluationMetrics.py), visualization(Visualizations.py) and feature transformation(TransformFeatures.py)
+- Data: Contains the data(.csv) file 
+- templates: Contains the web frontend page
+- Other files: model.pkl for the Random Forest Classifier model, scaler.pkl to transform the user input features, app.py contains the Flask web application code 
+
+## Project Details:
 This project tackles a classification machine learning challenge focused on predicting customer churn (those who have left the company within the last month, labeled as 'yes' or 'no').
 
 The dataset utilized in this endeavor has been sourced from [Kaggle's Telco Customer Churn dataset](https://www.kaggle.com/blastchar/telco-customer-churn). This dataset encompasses various categories of information, such as:
